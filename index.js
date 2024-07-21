@@ -29,13 +29,13 @@ app.post("/getText", async (req, res) => {
         const description = response.data.weather[0].description;
         let regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
         const country = regionNames.of(response.data.sys.country);
+
         let info = {
             temp: temp,
             city: city,
             country: country,
             description: description
         };
-        console.log(`temp: ${temp.toFixed(1)}°C, city: ${city}, country: ${country}, description: ${description}`);
         res.render("weather.ejs", { weatherInfo: info });
     } catch (error) {
         console.error(error);
