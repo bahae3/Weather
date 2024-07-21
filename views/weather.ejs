@@ -1,0 +1,10 @@
+<%- include ('header.ejs') %>
+
+<div class="weatherContent">
+    <p class="city">Current weather in <span class="city_span"><%= weatherInfo.city %>, <%= weatherInfo.country %></span>:</p>
+    <p class="temp"><%= weatherInfo.temp %> °C</p>
+    <p class="description">🌡<%= weatherInfo.description %></p>
+    <a href="/">Home</a>
+</div>
+
+<%- include ('footer.ejs') %>

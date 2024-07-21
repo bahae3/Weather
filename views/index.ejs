@@ -1,0 +1,9 @@
+<%- include ('header.ejs') %>
+<div class="content">
+    <h1 class="title">Type your city name:</h1>
+    <form action="/getText" method="post">
+        <input type="text" name="city" class="city_input">
+        <input type="submit" value="Get weather" class="submit_button">
+    </form>
+</div>
+<%- include ('footer.ejs') %>

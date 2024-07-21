@@ -1,0 +1,120 @@
+/* body and header styling */
+body{
+    margin: 0;
+}
+
+header{
+    padding: 1rem 0;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width: 10rem;
+    display: block;
+    margin: auto;
+}
+
+.header_subtitle{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+hr{
+    width: 85%;
+    border: 1px solid #87CEEB;
+}
+
+/* home content styling */
+.content{
+    width: fit-content;
+    margin: 5rem auto 0;
+    padding: 3rem;
+    border: 0.1rem solid #87CEEB;
+}
+
+.title{
+    margin-top: 0;
+    font-family: "Roboto Slab", serif;
+}
+
+.city_input{
+    height: 1.3rem;
+    width: 14rem;
+}
+
+.submit_button{
+    background-color: #20a7db;
+    height: 1.6rem;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+
+.submit_button:hover{
+    background-color: #87CEEB;
+    cursor: pointer;
+}
+
+/* weather.ejs styling */
+.weatherContent{
+    text-align: center;
+    padding: 2rem 2.5rem;
+    width: fit-content;
+    margin: 3rem auto;
+    font-family: "Rubik", sans-serif;
+    border: 1px solid #87CEEB;
+    font-size: 1.3rem;
+}
+
+.city_span{
+    font-weight: bold;
+    color: black !important;
+}
+
+.temp{
+    margin-bottom: 0.8rem;
+}
+
+.description{
+    margin-top: 0;
+}
+
+.weatherContent a{
+    text-decoration: none;
+    background-color: #20a7db;
+    padding: 0.4rem 0.9em;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.weatherContent a:hover{
+    background-color: #87CEEB;
+    color: rgb(63, 63, 63);
+}
+
+/* footer styling */
+footer{
+    background-color: #87CEEB;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer_api,
+.footer_copyright {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+span{
+    color: red;
+}
+
+.header_subtitle,
+.footer_api,
+.footer_copyright{
+    font-family: "Rubik", sans-serif;
+}
